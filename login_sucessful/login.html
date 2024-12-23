@@ -1,0 +1,24 @@
+<!-- Create an HTML form for user login with fields for username and password. Write a PHP
+script to process the form using $_POST. If the username and password match a predefined
+value, display a "Login Successful" message; otherwise, show "Invalid Credentials." -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h1>User Login</h1>
+    <form method="POST" action="process_login.php">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
